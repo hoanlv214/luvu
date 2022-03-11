@@ -177,8 +177,9 @@
 
 					<div class="col-12 text-center tamthu" style="font-size: 18pt;">
 						<p class="parse">Tớ có điều muốn nói. Pạn nhấn vào lá thư để đọc nhé :>> !</p>
-						<a href="index2.html" target="_blank"><i class="far fa-envelope lathu"
-								style="font-size: 40pt; color: #ef2a4d;"></i></a>
+						<a href="index2.html" target="_blank">
+							<i class="far fa-envelope lathu" style="font-size: 40pt; color: #ef2a4d;"></i>
+						</a>
 					</div>
 
 
@@ -190,9 +191,21 @@
 
 	<script src="javascript/charming.js"></script>
 	<script src="javascript/anime.js"></script>
-	<script src="javascript/scrollMonitor.js"></script>
+	<!-- <script src="javascript/scrollMonitor.js"></script> -->
 	<script src="javascript/myscript.js"></script>
-	<audio src="music/mySong.mp3" autoplay="true"></audio>
+	<audio src="music/mySong.mp3" autoplay></audio>
+	<!-- <iframe src="music/mySong.mp3" allow="autoplay" id="audio"></iframe> -->
+	<script>
+		var txt = ` | My love | `
+		var speed = 200;
+		var loop = null;
+		function run() {
+			document.title = txt;
+			txt = txt.substring(1, txt.length) + txt.charAt(0);
+			loop = setTimeout(`run()`, speed);
+		}
+		run();
+	</script>
 </body>
 
 </html>
