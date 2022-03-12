@@ -1,7 +1,7 @@
 var getclickf = document.querySelector('.firstclk');
 getclickf.style.opacity = "0";
 
-var setPack = function(getText) {
+var setPack = function (getText) {
 	charming(getText);
 	var createDiv = document.createElement('div');
 	createDiv.className = "box";
@@ -17,9 +17,9 @@ var setPack = function(getText) {
 		scaleX: 1,
 		easing: 'easeInOutQuint',
 		duration: 300,
-		complete: function() {
+		complete: function () {
 			clickDiv2.style.transformOrigin = "100% 50%";
-			getText.style.opacity= "1";
+			getText.style.opacity = "1";
 			var short = anime({
 				targets: clickDiv2,
 				easing: 'easeInOutQuint',
@@ -38,7 +38,7 @@ var get = document.querySelector('.container .heart');
 var timmau = document.querySelector('.container .heart .timmau');
 
 
-timmau.style.opacity= "0";
+timmau.style.opacity = "0";
 var theTime = anime.timeline();
 theTime.add({
 	targets: getHeartBeat,
@@ -46,9 +46,9 @@ theTime.add({
 	strokeDashoffset: [anime.setDashoffset, 0],
 	easing: 'easeInOutSine',
 	duration: 2000,
-	update: function(percent) {
+	update: function (percent) {
 		var thePercent = Math.round(percent.progress);
-		document.querySelector('.container .sup').innerHTML= "Nhịp tim của anh " + (thePercent+899);
+		document.querySelector('.container .sup').innerHTML = "Nhịp tim của anh " + (thePercent + 899);
 	}
 });
 theTime.add({
@@ -57,17 +57,17 @@ theTime.add({
 	strokeDashoffset: [anime.setDashoffset, 0],
 	easing: 'easeInOutSine',
 	duration: 600,
-	complete: function() {
+	complete: function () {
 		var makeColor = anime({
 			targets: timmau,
-			opacity: [0,1],
+			opacity: [0, 1],
 			easing: 'easeInOutQuint',
 			duration: 1300,
-			loop:true,
-			complete: function(){
+			loop: true,
+			complete: function () {
 				var nhiptim = anime({
 					targets: timmau,
-					opacity: [1,0],
+					opacity: [1, 0],
 					easing: 'easeOutSine',
 					duration: 1300,
 				});
@@ -75,9 +75,9 @@ theTime.add({
 		});
 		var hideHeartLine = anime({
 			targets: '.container .heart path .cls-2',
-			opacity: [1,0],
-			duration:1000,
-			complete: function(){
+			opacity: [1, 0],
+			duration: 1000,
+			complete: function () {
 				setPack(document.querySelector('.firstclk'));
 			}
 		})
@@ -85,27 +85,27 @@ theTime.add({
 });
 
 // Click Here Text Xulytion
-getclickf.addEventListener('mouseenter', function() {
+getclickf.addEventListener('mouseenter', function () {
 	anime.remove();
 	var charmingedText = anime({
 		targets: '.box span',
-		translateY: [-2,0],
-		translateX: [-2,0],
-		rotate: [6,0],
-		color: ['#6d3842','#ea4335'],
-		delay: function(el, i) { return i*20},
+		translateY: [-2, 0],
+		translateX: [-2, 0],
+		rotate: [6, 0],
+		color: ['#6d3842', '#ea4335'],
+		delay: function (el, i) { return i * 20 },
 		duration: 500
 	})
 });
-getclickf.addEventListener('mouseleave', function() {
+getclickf.addEventListener('mouseleave', function () {
 	anime.remove();
 	var charmingedText = anime({
-		targets: '.box span',	
-		translateY: [-0.5,0],
-		translateX: [-0.5,0],
-		rotate: [-1,0],
-		color: ['#6d3842','#ea4335'],
-		delay: function(el, i) { return i*20},
+		targets: '.box span',
+		translateY: [-0.5, 0],
+		translateX: [-0.5, 0],
+		rotate: [-1, 0],
+		color: ['#6d3842', '#ea4335'],
+		delay: function (el, i) { return i * 20 },
 		duration: 400,
 		direction: 'reverse'
 	})
@@ -117,7 +117,7 @@ divLayer.style.transformOrigin = "50% 0%";
 divLayer.style.transform = "scaleY(0)";
 
 
-getclickf.addEventListener('click', function(){
+getclickf.addEventListener('click', function () {
 	anime({
 		targets: divLayer,
 		easing: 'easeOutSine',
@@ -127,14 +127,14 @@ getclickf.addEventListener('click', function(){
 	var heyCrush = document.querySelectorAll('.crush path');
 	var finalText = document.querySelector('.parse');
 	var theLetter = document.querySelector('.lathu');
-	theLetter.addEventListener('mouseenter', function() {
+	theLetter.addEventListener('mouseenter', function () {
 		anime({
 			targets: theLetter,
-			rotate: [0,356],
+			rotate: [0, 356],
 			duration: 1000
 		})
 	});
-	theLetter.addEventListener('click', function(){
+	theLetter.addEventListener('click', function () {
 		anime({
 			targets: divLayer2,
 			easing: 'easeInOutQuint',
@@ -147,36 +147,36 @@ getclickf.addEventListener('click', function(){
 	theLetter.style.transform = "translateY(-4)"
 	charming(finalText);
 	charming(finalText);
-	theTime2= anime.timeline();
+	theTime2 = anime.timeline();
 	theTime2.add({
 		targets: heyCrush,
-		strokeDashoffset: [anime.setDashoffset,0],
+		strokeDashoffset: [anime.setDashoffset, 0],
 		easing: 'easeOutSine',
-		delay: function(el, i) {
-			return i*100;
+		delay: function (el, i) {
+			return i * 100;
 		},
 		duration: 3000,
 	})
 	theTime2.add({
 		targets: '.parse span',
-		translateY: [-3,0],
-		delay: function(el, i) {
-			return i*10;
+		translateY: [-3, 0],
+		delay: function (el, i) {
+			return i * 10;
 		},
 		duration: 250,
-		color: ['#232323','#e22748'],
+		color: ['#232323', '#e22748'],
 		offset: 3000,
 	});
 	theTime2.add({
 		targets: theLetter,
-		opacity: [0,1],
+		opacity: [0, 1],
 		easing: 'easeInOutQuint',
 		offset: "-=400ms",
 		duration: 200,
-		complete: function() {
+		complete: function () {
 			var drag = anime({
 				targets: theLetter,
-				translateY: [-4,4],
+				translateY: [-4, 4],
 				direction: 'alternate',
 				duration: 600,
 				loop: true
@@ -185,11 +185,11 @@ getclickf.addEventListener('click', function(){
 	});
 });
 
-var cantho =document.querySelector('.main');
+var cantho = document.querySelector('.main');
 cantho.insertAdjacentHTML('afterend', '<div class="author mt-5"><div class="row"><div class="col-12"><div class="me text-danger text-right"></div></div></div></div>');
 
 document.querySelector('.Description .modal-title').innerHTML = '<i class="far fa-comment-alt"></i>&nbsp;Nhịp tim như vậy là vì';
 document.querySelector('.Description .modal-body').innerHTML = 'Anh thích em <i class="fas fa-heart"></i> ';
-var author = document.querySelector('.author .me');author.style.opacity = "0.5";
+var author = document.querySelector('.author .me'); author.style.opacity = "0.5";
 author.innerHTML = "Bản quyền thuộc về<a href='https://anonyviet.com'>Lmint<a>";
 author.style.opacity = "0";
