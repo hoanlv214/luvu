@@ -19,13 +19,28 @@
 </head>
 
 <body>
+	<div class="pre-loader">
+		<div class="pre-loader-box">
+			<div class="loader-logo">
+				<img src="https://media1.giphy.com/media/9g8a1BBMvxRspBljIG/giphy.gif?cid=790b7611de8faf56d9590ebb8cf0d0e13d2f2cf346438a97&rid=giphy.gif&ct=s"
+					alt="tonton-gif" width="auto" height="200px" />
+			</div>
+			<!-- <div class="loader-logo">
+				<img src="https://i.pinimg.com/originals/59/3e/fc/593efcd315aad6cf2061270c8bae589a.gif" alt="tonton-gif"
+					width="auto" height="200px" />
+			</div> -->
+
+			<div class="loader-progress" id="progress_div">
+				<div class="bar" id="bar1"></div>
+			</div>
+			<div class="loading-text">Loading...</div>
+		</div>
+	</div> -->
 	<div class="container">
 		<div class="row mt-5 main">
 			<div class="col-12 text-center">
 
 				<div class="firstclk text-center">Click Here !</div>
-
-
 				<div class="drawHeart mt-4">
 					<svg id="Layer_1" class="heart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 1364 277.28">
@@ -55,18 +70,34 @@
 						<path id="tim" class="cls-a"
 							d="M685.11,222.53,588.67,119.89a74,74,0,0,1-20.38-49.81c-.55-59.75,72.35-84.8,118.8-28.4C747-34.6,826.25,34.44,801.72,94.45a63.52,63.52,0,0,1-13,19.73Z"
 							transform="translate(-2.5 -6.47)" />
+						<!--hình tim-->
+						<!--translate(-2.5 -6.47)-->
 						<polyline class="cls-b"
 							points="1364 216.05 1281 216.05 1271 170.05 1241 274.05 1214 118.05 1183 262.05 1174 216.05 684 216.05 195 216.05 186 263.05 155 119.05 128 275.05 98 171.05 88 216.05 0 216.05" />
 						<g id="_timmau_" class="timmau" data-name="&lt;timmau&gt;">
+							<!--nhịp tim-->
 							<path class="cls-2"
 								d="M802.5,93.92a64.12,64.12,0,0,1-13.17,20L686,222v-182c.17.2.34.39.5.59C747.08-36.66,827.33,33.2,802.5,93.92Z"
 								transform="translate(-2.5 -6.47)" />
+							<!--tim Phải-->
 							<path class="cls-3"
 								d="M569.5,93.92a64.12,64.12,0,0,0,13.17,20L686,222v-182c-.17.2-.34.39-.5.59C624.92-36.66,544.67,33.2,569.5,93.92Z"
 								transform="translate(-2.5 -6.47)" />
+							<!--tim Trái-->
 						</g>
 					</svg>
 				</div>
+
+				<!-- <div class="heart-rate">
+					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73"
+						enable-background="new 0 0 150 73" xml:space="preserve">
+						<polyline fill="none" stroke="#009B9E" stroke-width="3" stroke-miterlimit="10"
+							points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
+					</svg>
+					<div class="fade-in"></div>
+					<div class="fade-out"></div>
+				</div> -->
 
 				<div class="Description mt-5 text-center">
 					<div class="sup btn btn-outline-danger" data-toggle="modal" data-target="#myModal"></div>
@@ -80,6 +111,13 @@
 								</div>
 
 								<div class="modal-body text-danger"></div>
+
+
+								<div class="loader-logo">
+									<img src="https://i.pinimg.com/originals/59/3e/fc/593efcd315aad6cf2061270c8bae589a.gif"
+										alt="tonton-gif" width="auto" height="200px" />
+
+								</div>
 
 								<div class="modal-footer">
 									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -97,15 +135,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-
-
 					<svg id="crush" class="mt-4 crush" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 616.62 199.74">
 						<defs>
 							<style>
 								.cls-1 {
 									fill: #232323;
-									stroke: #dc3545;
+									stroke: #f7293e;
 								}
 							</style>
 						</defs>
@@ -176,14 +212,10 @@
 					</svg>
 
 					<div class="col-12 text-center tamthu" style="font-size: 18pt;">
-						<p class="parse">Tớ có điều muốn nói. Pạn nhấn vào lá thư để đọc nhé :>> !</p>
-						<a href="index2.html" target="_blank">
-							<i class="far fa-envelope lathu" style="font-size: 40pt; color: #ef2a4d;"></i>
-						</a>
+						<p class="parse">Tớ có điều muốn nói. Ấn vào lá thư để đọc nhé !</p>
+						<a href="index2.html" target="_blank"><i class="far fa-envelope lathu"
+								style="font-size: 40pt; color: #ef2a4d;"></i></a>
 					</div>
-
-
-
 				</div> <!-- end -->
 			</div>
 		</div>
@@ -191,21 +223,11 @@
 
 	<script src="javascript/charming.js"></script>
 	<script src="javascript/anime.js"></script>
-	<!-- <script src="javascript/scrollMonitor.js"></script> -->
+	<script src="javascript/scrollMonitor.js"></script>
 	<script src="javascript/myscript.js"></script>
-	<audio src="music/mySong.mp3" autoplay></audio>
-	<!-- Title run loop -->
-	<!-- <script>
-		var txt = ` | My love | `
-		var speed = 200;
-		var loop = null;
-		function run() {
-			document.title = txt;
-			txt = txt.substring(1, txt.length) + txt.charAt(0);
-			loop = setTimeout(`run()`, speed);
-		}
-		run();
-	</script> -->
+	<script src="javascript/app.js"></script>
+	<script src="javascript/heart.js"></script>
+	<audio src="music/at_my_worst.mp3" autoplay="true" loop="false"></audio>
 </body>
 
 </html>
